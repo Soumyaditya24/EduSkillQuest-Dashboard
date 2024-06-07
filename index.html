@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSkillQuest Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/VqJnxv1/Edu-Skill-Quest-LOGO.png" alt="Edu-Skill-Quest-LOGO" border="0"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Test</a></li>
+                    <li><a href="#">Study Material</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Supports/Feedback</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <div class="user-info">
+                    <span class="greeting">Hello User</span>
+                    <img src="https://via.placeholder.com/50" alt="User Image" class="profile-pic">
+                </div>
+            </header>
+            <section class="dashboard">
+                <div class="profile-section box">
+                    <h2 class="box-title">My Profile</h2>
+                    <img src="https://via.placeholder.com/100" alt="Profile Photo" class="profile-pic-large">
+                    <input type="file" id="profilePhoto" name="profilePhoto">
+                    <p>Name: User's Name</p>
+                    <p>Email: User's Email</p>
+                    <button class="change-password-btn">Change Password</button>
+                </div>
+                <div class="test-history box">
+                    <h2 class="box-title">Test History</h2>
+                    <ul>
+                        <li>Test 1 - 01 Jan 2024</li>
+                        <li>Test 2 - 15 Feb 2024</li>
+                        <li>Test 3 - 20 Mar 2024</li>
+                    </ul>
+                </div>
+                <div class="marks-section box">
+                    <h2 class="box-title">My Marks</h2>
+                    <ul>
+                        <li>Test 1: 60</li>
+                        <li>Test 2: 70</li>
+                        <li>Test 3: 90</li>
+                    </ul>
+                    <div class="charts-container">
+                        <canvas id="marksChart1"></canvas>
+                        <canvas id="marksChart2"></canvas>
+                        <canvas id="marksChart3"></canvas>
+                    </div>
+                </div>
+                <div class="study-materials box">
+                    <h2 class="box-title">Suggested Study Materials</h2>
+                    <button class="view-materials-btn" onclick="viewMaterials()">View Study Materials</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
